@@ -1,11 +1,10 @@
+var isBigEnough = function (word) {
+  return word.length >= 3;
+}
+
 var newPhrase = function (phrase) {
   var words = phrase.split(" ");
-  var newWords = [];
-  words.forEach(function (word) {
-    if (word.length >= 3) {
-      newWords.push(word);
-    }
-  });
+  var newWords = words.filter(isBigEnough);
   newWords.reverse();
   return newWords.join(" ");
 }
