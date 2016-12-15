@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Word Play</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Word Play</h1>
+        <p>Enter a phrase, and then see a fun variation:</p>
+      </div>
+      <div id="input">
+        <form>
+          <div class="form-group">
+            <label for="phrase">Enter phrase:</label>
+            <input id="phrase" class="form-control" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <p></p>
+      <div class="well output">
+        <h3>Your new phrase:</h3>
+        <h4 id="new-phrase"></h4>
+      </div>
+    </div>
+  </body>
+</html>
